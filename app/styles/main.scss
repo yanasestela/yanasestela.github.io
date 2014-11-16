@@ -23,6 +23,7 @@ body {
   font-weight: 300;
   font-size: 1.2em;
   color: white;
+  margin: 0;
 }
 
 section {
@@ -75,7 +76,7 @@ h3 {
 }
 
 .box {
-  padding: 20px;
+  padding: 0px 20px;
   border: 4px solid white;
 }
 
@@ -95,6 +96,8 @@ h3 {
 
   width: 150px;
   padding: 4px;
+  padding-top: 5px;
+  padding-bottom: 0px;
   background: white;
   position: absolute;
   left: -100px;
@@ -152,11 +155,48 @@ h3 {
   }
 
   border-radius: 15px;
-  margin-left: 120px;
+  margin-left: 200px;
   position: relative;
   width: 400px;
 }
 
 .blue-text {
   color: $blue;
+}
+
+@media (max-width: 768px) {
+  .step-media-image {
+    visibility: hidden;
+  }
+
+  .step-description {
+    margin-left: 20px;
+  }
+
+  .profile-image {
+    top: -250px;
+    left: 20%;
+  }
+
+  .box {
+    border: none;
+  }
+
+  .speech-ballon {
+    &:before {
+      position: absolute;
+      width: 42px;
+      height: 30px;
+      content: ' ';
+      left: 60%;
+      top: -30px;
+      background: url("../images/speech-ballon-arrow-up.png");
+    }
+
+    box-sizing: border-box;
+    border: 4px solid white;
+    margin-top: 270px;
+    margin-left: 5%;
+    width: 90%;
+  }
 }
