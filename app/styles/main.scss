@@ -1,31 +1,162 @@
 // bower:scss
 // endbower
 
-body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+/* variables */
+
+$blue: #85d2e3;
+$gray: #373837;
+
+@import "clearfix";
+
+/* layout */
+
+.l-content {
+  margin: 0 auto;
+  max-width: 600px;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+/* default */
+
+body {
+  background: $gray;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  color: white;
+}
+
+section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+p {
+  text-align: left;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+  /* word-spacing: 0.5em; */
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.5em;
+  padding-top: 100px;
+}
+
+.blue-section {
+  &:before {
+    top: -1px;
+    position: relative;
+    display: block;
+    height: 35px;
+    content: ' ';
+    background: url("../images/gray-triangle-down.png");
+  }
+
+  &:after {
+    display: block;
+    height: 34px;
+    content: ' ';
+    background: url("../images/gray-triangle-up.png");
+  }
+
+  background: $blue;
+}
+
+.box {
+  padding: 20px;
+  border: 4px solid white;
+}
+
+.step-container {
+  margin-top: 80px;
+}
+
+.step-media {
+  position: relative;
+  background: white;
+}
+
+.step-media-image {
+  img {
+    width: 100%;
+  }
+
+  width: 150px;
+  padding: 4px;
+  background: white;
+  position: absolute;
+  left: -100px;
+  top: -30px;
+}
+
+.media-item {
+  position: relative;
+}
+
+.step-media-image.step-inner-image {
+  top: 5px;
+}
+
+.step-description {
+  padding: 10px;
+  text-align: left;
+  color: #828282;
+  position: relative;
+  margin-left: 60px;
+}
+
+.step-number {
+  color: black;
+}
+
+.step-name {
+  color: $blue;
+}
+
+.gray-text {
+  color: $gray;
+}
+
+
+.profile-image {
+  position: absolute;
+  left: -260px;
+  width: 200px;
+
+  img {
+    width: 100%;
   }
 }
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+.speech-ballon {
+  &:before {
+    position: absolute;
+    width: 30px;
+    height: 42px;
+    content: ' ';
+    left: -30px;
+    top: 100px;
+    background: url("../images/speech-ballon-arrow.png");
+  }
+
+  border-radius: 15px;
+  margin-left: 120px;
+  position: relative;
+  width: 400px;
+}
+
+.blue-text {
+  color: $blue;
 }
