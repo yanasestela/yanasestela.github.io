@@ -33,6 +33,7 @@ section {
 
 p {
   text-align: left;
+  font-size: 1.2em;
 }
 
 h1, h2, h3 {
@@ -81,51 +82,25 @@ h3 {
 }
 
 .step-container {
-  margin-top: 80px;
-}
-
-.step-media {
-  position: relative;
-  background: white;
-}
-
-.step-media-image {
-  img {
-    width: 100%;
-  }
-
-  width: 150px;
-  padding: 4px;
-  padding-top: 5px;
-  padding-bottom: 0px;
-  background: white;
-  position: absolute;
-  left: -100px;
-  top: -30px;
-}
-
-.media-item {
-  position: relative;
-}
-
-.step-media-image.step-inner-image {
-  top: 5px;
-}
-
-.step-description {
-  padding: 10px;
-  text-align: left;
-  color: #828282;
-  position: relative;
-  margin-left: 60px;
-}
-
-.step-number {
-  color: black;
+  margin-top: 2.5em;
+  padding: 0 1em;
 }
 
 .step-name {
-  color: $blue;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  background: $blue;
+  color: $gray
+}
+
+hr {
+  width: 90%;
+  border: none;
+  margin: 2em auto;
+  height: 1px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAALUlEQVQ4EWP8DwQMRAALSwusqhiJNQCrbqAgEy4JYsVHDRgNRFBaGU0HVAgDAB6tCMDGgNzOAAAAAElFTkSuQmCC);
+  background-repeat:repeat;
 }
 
 .gray-text {
@@ -165,12 +140,8 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  .step-media-image {
-    visibility: hidden;
-  }
-
-  .step-description {
-    margin-left: 20px;
+  body {
+    font-size: 1.2em;
   }
 
   .profile-image {
