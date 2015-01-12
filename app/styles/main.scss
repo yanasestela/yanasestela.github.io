@@ -18,7 +18,7 @@ $gray: #373837;
 /* default */
 
 body {
-  background: $gray;
+  background: url("../images/gray-background_@2X.png");
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
   font-size: 1.2em;
@@ -73,7 +73,7 @@ h3 {
     background: url("../images/gray-triangle-up.png");
   }
 
-  background: $blue;
+  background: url("../images/knitting250px_@2X.png");
 }
 
 .box {
@@ -90,7 +90,7 @@ h3 {
   box-sizing: border-box;
   border-radius: 0.5em;
   padding: 0.5em;
-  background: $blue;
+  background: url("../images/knitting250px_@2X.png");
   color: $gray
 }
 
@@ -144,6 +144,10 @@ hr {
     font-size: 1.2em;
   }
 
+  p {
+    font-size: 1em;
+  }
+
   .profile-image {
     top: -250px;
     left: 20%;
@@ -169,5 +173,13 @@ hr {
     margin-top: 270px;
     margin-left: 5%;
     width: 90%;
+  }
+
+  h1, h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
   }
 }
